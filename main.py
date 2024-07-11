@@ -1,10 +1,9 @@
 import numpy as np
-import gym
 from arguments import get_args
 from replaybuffer import ReplayBuffer
 from rudder import Rudder
 from tqdm import tqdm
-import torch,os,datetime
+import torch,os,datetime,gym
 
 args = get_args()
 env = gym.make("Pendulum-v0")
